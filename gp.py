@@ -1,3 +1,6 @@
+import gpytorch
+import torch
+
 class GPRegressionModel(gpytorch.models.ExactGP):  
     """
     Exact GP Model copied from main.py.

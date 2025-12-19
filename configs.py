@@ -10,12 +10,17 @@ ground_truth_function = ground_truth_1d
 DOMAIN = torch.linspace(0, 1, 200).reshape(-1, 1)
 SAFE_THRESHOLD = -0.2
 
-INITIAL_SAFE_INDICES = torch.tensor([20])
-
+INITIAL_SAFE_INDICES = torch.tensor([20,140, 80, 199])
 
 # algo hyperparms  
-
-m_PAC = 1000
+noise_std  = 0.05
+delta_cube = 0.1
+num_local_cubes = 0
+delta_conf = 0.01
+kappa = 0.005
+gamma = 0.1
+alpha = 0.5
+m = 200
 
 
 
